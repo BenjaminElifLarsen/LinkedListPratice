@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 
 namespace LinkedList
 {
@@ -8,7 +6,6 @@ namespace LinkedList
     public class LinkedList<Type>
     {
         private ListComponent<Type> _first;
-
 
         public void AddFirst(Type data)
         {
@@ -21,8 +18,6 @@ namespace LinkedList
         {
             _first = _first.Next;
         }
-
-        
 
         public void Print(Action<Type> action)
         {
@@ -41,6 +36,7 @@ namespace LinkedList
                 Printing(action, next.Next);
             }
         }
+
         public int Count()
         {
             int i = 0;
@@ -80,36 +76,6 @@ namespace LinkedList
                     }
                 }
             }
-
-
-            //ListComponent<Type> temp;
-            bool swapped = false;
-            //do
-            //{
-
-
-                //for (ListComponent<Type> current = _first; current.Next != null;)
-                //{
-                //    if (action(current.Data, current.Next.Data))
-                //    {
-                //        temp = current;
-                //        current = temp.Next;
-                //        temp.Next = temp.Next.Next;
-                //        current.Next = temp;
-                //        //temp = current;
-                //        //Type data2 = current.Data;
-                //        //Type data = current.Next.Data;
-                //        //current = current.Next;
-                //        //current.Data = data2;
-                //        //current.Next.Data = data;
-                //        //swapped = true;
-                //        //break;
-                //    }
-                //    else if (current.Next != null)
-                //            current = current.Next;
-                    
-                //}
-            //} while (swapped);
         }
 
         private int Current(ListComponent<Type> next)

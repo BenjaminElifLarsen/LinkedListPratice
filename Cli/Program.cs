@@ -31,11 +31,7 @@ namespace Cli
 
             linkedList.Sort(Sort);
             Console.WriteLine("Printing sorted");
-
             linkedList.Print(Print);
-
-            //linkedList = new();
-            //Thread.Sleep(5000);
 
         }
 
