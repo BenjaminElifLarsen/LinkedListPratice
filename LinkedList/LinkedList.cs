@@ -24,8 +24,13 @@ namespace LinkedList
             if(_first != null)
             {
                 action.Invoke(_first.Data);
-                Printing( action,_first.Next);
+                Printing(action,_first.Next);
             }
+        }
+
+        public Type GetFirstValue()
+        {
+            return _first.Data;
         }
 
         private void Printing(Action<Type> action, ListComponent<Type> next)

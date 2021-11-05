@@ -18,6 +18,8 @@ namespace Cli
             linkedList.AddFirst("4");
             linkedList.AddFirst("5");
             linkedList.AddFirst("24");
+            linkedList.AddFirst("15T");
+            linkedList.AddFirst("T15");
             linkedList.AddFirst("15");
             Console.WriteLine("Total");
             Console.WriteLine(linkedList.Count());
@@ -32,7 +34,6 @@ namespace Cli
             linkedList.Sort(Sort);
             Console.WriteLine("Printing sorted");
             linkedList.Print(Print);
-
         }
 
         static bool Sort(string data, string data2)
