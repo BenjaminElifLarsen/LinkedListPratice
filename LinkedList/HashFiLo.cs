@@ -24,9 +24,9 @@ namespace LinkedList
                 return base.Add(data);
             }
 
-            for(ListComponent<Type> current = _head; current.Next != null; current = current.Next)
+            for(ListComponent<Type> current = _head; current != null; current = current.Next)
             { //need to check if the next is null
-                if (current.Data.CompareTo(data) >= 0)
+                if (current.Data.CompareTo(data) == 0)
                     return false;
             }
 

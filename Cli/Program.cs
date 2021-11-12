@@ -46,6 +46,10 @@ namespace Cli
             HashFiLo<int> l = new();
             l.Add(5);
             l.Add(5);
+            l.Add(4);
+            l.Add(5);
+            l.Add(3);
+            l.Add(6);
         }
 
         static bool Sort(string data, string data2)
