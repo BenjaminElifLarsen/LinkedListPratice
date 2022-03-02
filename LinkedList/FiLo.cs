@@ -55,7 +55,7 @@ namespace LinkedList
             }
         }
 
-        public override int Count()
+        public override int Count() 
         {
             int i = 0;
             if (_head != null)
